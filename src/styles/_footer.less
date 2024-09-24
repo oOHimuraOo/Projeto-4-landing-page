@@ -1,0 +1,84 @@
+@import '_variaveis';
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #cores[pretoComAlpha];
+    border-radius: 8px 4px 0 0;
+
+    &__lista{
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 50px;
+
+        &__item {
+            margin-top: 15px;
+            margin-left: 15px;
+
+            a {
+                text-decoration: none;
+
+
+                &:hover {
+                    color: #cores[branco]
+                }
+            }
+        }
+    }
+
+    &__container {
+        img {
+            margin-left: 765px;
+            opacity: 85%;
+            width: 200px;
+        }
+
+        p {
+            width: 1000px;
+            margin-left: 15px;
+        }
+
+        p::after {
+            content: 'TM & © 2024 Legendary. All rights reserved. Legendary Entertainment is a leading media company with film, television and digital and comics divisions dedicated to owning, producing and delivering content to mainstream audiences with a targeted focus on the powerful fandom demographic.';
+        }
+    }
+}
+
+// @media @breakPointAdjust1 {
+    
+// }
+
+// @media @breakPointTablet {
+//     .footer {
+//         display: none;
+//     }
+// }
+
+// @media @breakPointMobile {
+//     .footer {
+//         display: none;
+    //pesquisar depois pq as configurações abaixo fazem tudo bugar:
+    //     position: relative; 
+    //     bottom: -92px;
+    //     &__lista {
+    //         display: none;
+    //     }
+
+    //     &__container {
+    //         display: flex;
+    //         flex-direction: column;
+
+    //         img {
+    //             margin-left: 0;
+    //         }
+
+    //         p {
+    //             width: 100%;
+    //         }
+    //         p::after {
+    //             content: 'TM & © 2024 Legendary.';
+    //         }
+    //     }
+//     }
+// }

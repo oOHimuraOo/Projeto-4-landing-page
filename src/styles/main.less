@@ -1,0 +1,84 @@
+@import '_fonts';
+@import '_reset';
+@import '_variaveis';
+@import '_particles';
+@import '_header';
+@import '_infos';
+@import '_design';
+@import '_footer';
+
+.AjustarTamanho(@tamanho: 16px) {
+    font-size: @tamanho;
+    line-height: calc(@tamanho + 10px);
+    color: #cores[prata];
+}
+
+body {
+    background-color: black;
+    background-image: url(../img/wp1822941-pacific-rim-wallpapers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.titulo {
+    &--grn {
+        .AjustarTamanho(44px);
+    }
+
+    &--med {
+        .AjustarTamanho(40px);
+    }
+
+    &--peq {
+        .AjustarTamanho(36px);
+    }
+}
+
+.texto {
+    &--grn {
+        .AjustarTamanho(24px);
+        text-transform: uppercase
+    }
+
+    &--med {
+        .AjustarTamanho(22px);
+        font-family: @fontTerciaria
+        
+    }
+
+    &--peq {
+        .AjustarTamanho(20px);
+        font-family: @fontSecundaria;
+    }
+
+    &--mpq {
+        .AjustarTamanho();
+        font-family: @fontSecundaria;
+    }
+
+    &--spq {
+        .AjustarTamanho(12px);
+        font-family: @fontSecundaria;
+    }
+}
+
+// @media @breakPointAdjust1 {
+//     body {
+//         background-size: 2263px 1273px;
+//     }
+// }
+
+// @media @breakPointTablet {
+//     body {
+//         background-image: url();
+//     }
+// }
+
+// @media @breakPointMobile {
+//     body {
+//         background-image: url(../img/6adfbbb78287625dfdee1f7368e4175f.jpg);
+//         background-size: 120%;
+//         overflow: hidden;
+//     }
+// }

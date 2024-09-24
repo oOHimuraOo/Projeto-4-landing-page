@@ -1,0 +1,115 @@
+@import '_variaveis';
+
+.design {
+    display: flex;
+    justify-content: flex-end;
+
+    &__borda1 {
+        position: relative;
+        right: 50px;
+        bottom: 300px;
+        max-width: 450px;
+        max-height: 250px;
+        padding: 5px;
+        background-color: #cores[branco];
+        overflow: hidden;
+        border-radius: 5px;
+
+        &__borda2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #cores[preto];
+            padding: 5px;
+            max-width: 440px;
+            max-height: 200px;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 5px;
+
+            &__borda3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: blue;
+                max-width: 420px;
+                max-height: 190px;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+                border-radius: 5px;
+
+                .design__lista{
+                    position: relative;
+                    width: 420px;
+                    height: 190px;
+                    &__item{
+                        position:absolute;
+                        opacity: 0;
+                        
+                        a {
+                            display: none;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+                    
+                        &--is-visible {
+                            opacity: 100%;
+
+                            a {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__container{
+            display: flex;
+            flex-direction: column;
+            span {
+                margin-left: 15px;
+                text-transform: uppercase;
+                height: 20px;
+                color: #cores[preto];
+            }
+    
+            &__container{
+                margin-left: 15px;
+                
+                .star {
+                    max-height: 10px;
+                    max-width: 10px;
+                    height: 10px;
+                    margin-right: 5px;
+                    
+                }
+            }
+        }
+    }
+    
+}
+
+// @media @breakPointAdjust1 {
+    
+// }
+
+// @media @breakPointTablet {
+//     .design {
+//         &__borda1{
+//             display: none;
+//         }
+//     }
+// }
+
+// @media @breakPointMobile {
+//     .design {
+//         &__borda1{
+//             display: none;
+//         }
+//     }
+// }

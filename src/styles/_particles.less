@@ -1,0 +1,42 @@
+@import '_variaveis';
+
+.particles {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    background-color: #cores[amarelo];
+    border-radius: 50%;
+    animation: float 5s linear 1s infinite ;
+    opacity: 0;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateY(-50px) translateX(30px);
+        opacity: 0.6;
+    }
+    90% {
+        transform: translateY(-90px) translateX(50px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-100px) translateX(60px);
+        background-color: #cores[vermelho];
+        opacity: 0;
+    }
+}
+
+// @media @breakPointMobile {
+//     .particles-container {
+//         display: none;
+//     }
+// }
