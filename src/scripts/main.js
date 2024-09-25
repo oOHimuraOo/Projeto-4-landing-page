@@ -158,8 +158,8 @@ function ajustar_altura() {
     const infosContainer = document.querySelector('[data-set-height]')
     const logo = document.querySelector('[data-logo]').getBoundingClientRect().top
     
-    //var offset = convertToFloat(distanciaDoLogoDoPaddingBottom)  
-    var nova_altura_calculada = window.innerHeight + alturaDoLogo//logo + offset
+    var offset = convertToFloat(distanciaDoLogoDoPaddingBottom)  
+    var nova_altura_calculada = logo + offset
 
     if (infosContainer.style.height < window.innerHeight) {
         infosContainer.style.setProperty('height', `${nova_altura_calculada}px`)
